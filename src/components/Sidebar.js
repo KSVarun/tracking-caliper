@@ -24,7 +24,6 @@ function Sidebar(props) {
   ]);
 
   const handleSideBarItemClick = (id) => {
-    debugger;
     if (id !== 1) {
       let updatedSideBarItems = [...sidebarItems];
       updatedSideBarItems.forEach((item) => {
