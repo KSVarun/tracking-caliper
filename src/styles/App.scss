@@ -1,0 +1,13 @@
+body {
+  margin: unset;
+}
+.App {
+  height: 100vh;
+  display: flex;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

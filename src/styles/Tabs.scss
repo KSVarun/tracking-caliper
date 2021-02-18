@@ -1,0 +1,32 @@
+.tabs-section {
+  font-family: sans-serif;
+  margin: 20px;
+  font-size: 13px;
+  display: flex;
+  .individual-tab {
+    border: 1px solid #f1f1f1;
+    padding: 10px;
+    width: 175px;
+    display: flex;
+    justify-content: center;
+    color: #3f50b5;
+    cursor: pointer;
+    align-items: center;
+    .tab-name {
+      margin-right: 5px;
+    }
+    .count {
+      font-size: 8px;
+    }
+  }
+  .individual-tab:first-child {
+    border-radius: 5px 0px 0px 5px;
+  }
+  .individual-tab:last-child {
+    border-radius: 0px 5px 5px 0px;
+  }
+  .individual-tab.true {
+    background-color: #3f50b5;
+    color: #fff;
+  }
+}
