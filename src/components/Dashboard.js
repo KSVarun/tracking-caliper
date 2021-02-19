@@ -2,19 +2,21 @@ import React, { useState } from 'react';
 import { Dropdown } from 'semantic-ui-react';
 
 import Tabs from '../components/Tabs';
+import StatusCard from '../components/StatusCard';
+import TruckDetailsCard from '../components/TruckDetailsCard';
 
 function Dashboard() {
   const transporterOptions = [
-    { key: 'af', value: 'af', flag: 'af', text: 'Ashoka Leyland' },
-    { key: 'ta', value: 'ta', flag: 'ta', text: 'Tata Motors' }
+    { key: 'af', value: 'af', text: 'Ashoka Leyland' },
+    { key: 'ta', value: 'ta', text: 'Tata Motors' }
   ];
   const plantDepotOptions = [
-    { key: 'mb', value: 'mb', flag: 'mb', text: 'Mumbai Plant' },
-    { key: 'ba', value: 'ba', flag: 'ba', text: 'Bangalore Plant' }
+    { key: 'mb', value: 'mb', text: 'Mumbai Plant' },
+    { key: 'ba', value: 'ba', text: 'Bangalore Plant' }
   ];
   const itemOptions = [
-    { key: 'pa', value: 'pa', flag: 'pa', text: 'Care Package' },
-    { key: 'gr', value: 'gr', flag: 'gr', text: 'Grocery' }
+    { key: 'pa', value: 'pa', text: 'Care Package' },
+    { key: 'gr', value: 'gr', text: 'Grocery' }
   ];
   let [tabs, setTabs] = useState([
     { id: 1, name: 'All', selected: true, count: 54 },
@@ -78,6 +80,12 @@ function Dashboard() {
           selection
           options={itemOptions}
         />
+      </div>
+      <div className='status-card-section'>
+        <StatusCard />
+      </div>
+      <div className='truck-details-card-section'>
+        <TruckDetailsCard />
       </div>
     </div>
   );

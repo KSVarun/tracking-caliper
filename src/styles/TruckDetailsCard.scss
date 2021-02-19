@@ -1,0 +1,122 @@
+.truck-card {
+  display: flex;
+  justify-content: space-between;
+  .missing-truck {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    width: 40vw;
+    box-shadow: #d0cece 0px 1px 10px 0px;
+    .icon-title-value {
+      display: flex;
+      .left-tag {
+        position: relative;
+        width: 4px;
+        height: 100%;
+        left: -22px;
+        background-color: rgb(246, 96, 96);
+        top: -10px;
+      }
+      .title {
+        color: rgb(246, 96, 96);
+        margin-right: auto;
+      }
+    }
+    .trip-source-destination-details {
+      display: flex;
+      margin-bottom: 20px;
+      .vertical-line {
+        height: 100%;
+        width: 2px;
+        background-color: #dedede;
+        margin-right: 20px;
+        border-radius: 10px;
+      }
+      .trip-details {
+        margin-right: 10rem;
+      }
+    }
+    .driver-details-last-known-location-details {
+      display: flex;
+      .vertical-line {
+        height: 100%;
+        width: 2px;
+        background-color: #dedede;
+        margin-right: 15px;
+        border-radius: 10px;
+      }
+      .driver-details {
+        margin-right: 11rem;
+        .heading {
+          font-weight: 700;
+        }
+      }
+      .last-known-details {
+        .heading {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  .detention-truck {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    width: 40vw;
+    box-shadow: #d0cece 0px 1px 10px 0px;
+    .icon-title-value {
+      display: flex;
+      .left-tag {
+        position: relative;
+        width: 4px;
+        height: 100%;
+        left: -22px;
+        background-color: black;
+        top: -10px;
+      }
+      .title {
+        margin-right: auto;
+        color: black;
+      }
+    }
+    .trip-source-destination-details {
+      display: flex;
+      margin-bottom: 20px;
+      .vertical-line {
+        height: 100%;
+        width: 2px;
+        background-color: #dedede;
+        margin-right: 20px;
+        border-radius: 10px;
+      }
+      .trip-details {
+        margin-right: 10rem;
+      }
+    }
+    .driver-details-checkpoint-details {
+      display: flex;
+      .vertical-line {
+        height: 100%;
+        width: 2px;
+        background-color: #dedede;
+        margin-right: 15px;
+        border-radius: 10px;
+      }
+      .driver-details {
+        margin-right: 11rem;
+        .heading {
+          font-weight: 700;
+        }
+      }
+      .checkpoint-details {
+        .heading {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

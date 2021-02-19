@@ -11,7 +11,17 @@
       .ui.fluid.dropdown {
         width: 29rem;
         margin-right: 25px;
+        background-color: #f5f5f2;
+        color: #3f50b5;
+        border-color: #3f50b5;
       }
+    }
+
+    .status-card-section {
+      margin: 0px 40px 40px 40px;
+    }
+    .truck-details-card-section {
+      margin: 0px 40px 40px 40px;
     }
   }
 }

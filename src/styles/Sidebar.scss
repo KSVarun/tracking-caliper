@@ -9,7 +9,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
     height: 70px;
     width: 70px;
     cursor: pointer;
@@ -28,8 +27,10 @@
   .sidebar-item:last-child {
     margin-top: auto;
   }
+  .sidebar-item:hover {
+    background-color: #2e3b86;
+  }
   .sidebar-item.true {
-    margin-bottom: 10px;
     height: 70px;
     border-right: #8cb4da solid 5px;
     background-color: #2e3b86;

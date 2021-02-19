@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Dropdown } from 'semantic-ui-react';
 
 import Search from '../icons/search.svg';
 import Bell from '../icons/bell.svg';
@@ -8,13 +9,14 @@ import '../styles/Header.scss';
 function Header() {
   let [notification, setNotification] = useState('block');
   let [searchString, setSearchString] = useState('');
+  const options = [
+    { key: 'tr', value: 'tr', text: 'Tracking' },
+    { key: 'sh', value: 'sh', text: 'Shipment' }
+  ];
   return (
     <div className='header-section'>
       <div className='options'>
-        <select>
-          <option>Tracking</option>
-          <option>Shipment</option>
-        </select>
+        <Dropdown placeholder='Select Type' fluid selection options={options} />
       </div>
       <div className='vertical-divider'></div>
       <div className='search-filed'>
